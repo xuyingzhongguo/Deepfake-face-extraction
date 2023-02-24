@@ -40,7 +40,7 @@ def process_video(video_path, label, image_name):
             if boxes is not None:
                 for j, (box, prob) in enumerate(zip(boxes, probs)):
                     if prob > 0.98:
-                        extract_face(frame, box, image_size=image_size, margin=margin, save_path=f'{save_path}/frame{i}_{j}_{prob}.png')
+                        extract_face(frame, box, image_size=image_size, margin=margin, save_path=f'{save_path}/frame{i}.png')
 
 
 if __name__ == '__main__':
